@@ -22,7 +22,7 @@ inside_stake    = [617, 598]  # 수량을 넣은 후 누를 stake 버튼 위치
 sps_per_day = int(num_sps_staked * apr / 100 / 365)
 num_stake = ("%4.3f")%(sps_per_day / 1440 * harvest_interval)
 print('스테이킹 수량    %8d\n일 SPS 채굴량 %8d\nStake할 수량 %12s'%(num_sps_staked, sps_per_day, num_stake))
-
+print('interval           ', harvest_interval)
 print('start')
 
 while(1) :
