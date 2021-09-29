@@ -1,7 +1,7 @@
 # pip install pip install pyautogui
 # steemmonster.com에서 sps를 자동으로 claim하고 staking하는 프로그램
 # This is automatic claim and staking prgrom for sps in Splinterland or steemmonsters
-# 
+# 주의사항 : staking할 수량이 부족하여 오류가 발생하면 수작업으로 화면을 정리해주어야 합니다. 수량 선택을 
 #   
 
 import pyautogui
@@ -40,7 +40,7 @@ while(1) :
     pyautogui.typewrite(num_stake, interval=0.1)
 
     #press STAKE
-    pyautogui.click(617, 598)
+    pyautogui.click(inside_stake[0], inside_stake[1])
     time.sleep(2)
     #press 확인
     pyautogui.typewrite('\n', interval=0.1)
